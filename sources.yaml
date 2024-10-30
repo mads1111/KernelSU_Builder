@@ -1,6 +1,6 @@
 LineageOS-20:
   kernel:
-    - git clone https://github.com/HowWof/android_kernel_realme_mt6785.git -b lineage-20
+    - git clone https://github.com/TARKZiM/android_device_samsung_sm7225-common.git
   clang:
     - git clone --depth=1 https://gitlab.com/Jprimero15/lolz_clang.git -b main
   config:
@@ -49,7 +49,7 @@ DivestOS-13:
 
 Sage-Android-14:
   kernel:
-    - git clone https://github.com/Killerpac/android_kernel_realme_mt6785.git -b udc
+    - git clone https://github.com/TARKZiM/android_device_samsung_sm7225-common.git
   clang:
     - git clone --depth=1 https://gitlab.com/Jprimero15/lolz_clang.git -b main
   config:
