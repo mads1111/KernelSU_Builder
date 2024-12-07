@@ -1,10 +1,10 @@
 LineageOS-20:
   kernel:
-    - git clone https://github.com/TARKZiM/android_device_samsung_sm7225-common.git
+    - git clone https://github.com/physwizz/a145p-T.git
   clang:
     - git clone --depth=1 https://gitlab.com/Jprimero15/lolz_clang.git -b main
   config:
-    - make O=out ARCH=arm64 vendor/a42xq_eur_open_defconfig
+    - make O=out ARCH=arm64 configs/a14m_defconfig
   build:
     - ARCH=arm64 CROSS_COMPILE="${PWD}/clang/bin/aarch64-linux-gnu-" CROSS_COMPILE_COMPAT="${PWD}/clang/bin/arm-linux-gnueabi" CROSS_COMPILE_ARM32="${PWD}/clang/bin/arm-linux-gnueabi-" CLANG_TRIPLE=aarch64-linux-gnu- make -j$(nproc --all) LLVM=1 LLVM_IAS=1 LD=ld.lld AR=llvm-ar NM=llvm-nm AS=llvm-as OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip O=out
   target:
@@ -20,7 +20,8 @@ Zenitsu:
   clang:
     - git clone --depth=1 https://gitlab.com/Jprimero15/lolz_clang.git -b main
   config:
-    - make O=out ARCH=arm64 vendor/a42xq_eur_open_defconfig
+    - make O=out ARCH=arm64 configs/a14m_defconfig
+
   build:
     - ARCH=arm64 CROSS_COMPILE="${PWD}/clang/bin/aarch64-linux-gnu-" CROSS_COMPILE_COMPAT="${PWD}/clang/bin/arm-linux-gnueabi" CROSS_COMPILE_ARM32="${PWD}/clang/bin/arm-linux-gnueabi-" CLANG_TRIPLE=aarch64-linux-gnu- make -j$(nproc --all) LLVM=1 LLVM_IAS=1 LD=ld.lld AR=llvm-ar NM=llvm-nm AS=llvm-as OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip O=out
   target:
@@ -32,11 +33,11 @@ Zenitsu:
 
 DivestOS-13:
   kernel:
-    - git clone https://github.com/TARKZiM/android_device_samsung_sm7225-common.git -b divest-13
+    - git clone https://github.com/physwizz/a145p-T.git
   clang:
     - git clone --depth=1 https://gitlab.com/Jprimero15/lolz_clang.git -b main
   config:
-    - make O=out ARCH=arm64 vendor/a42xq_eur_open_defconfig
+    - make O=out ARCH=arm64 configs/a145m_defconfig
   build:
     - ARCH=arm64 CROSS_COMPILE="${PWD}/clang/bin/aarch64-linux-gnu-" CROSS_COMPILE_COMPAT="${PWD}/clang/bin/arm-linux-gnueabi" CROSS_COMPILE_ARM32="${PWD}/clang/bin/arm-linux-gnueabi-" CLANG_TRIPLE=aarch64-linux-gnu- make -j$(nproc --all) LLVM=1 LLVM_IAS=1 LD=ld.lld AR=llvm-ar NM=llvm-nm AS=llvm-as OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip O=out
   target:
@@ -49,11 +50,11 @@ DivestOS-13:
 
 Sage-Android-14:
   kernel:
-    - git clone https://github.com/TARKZiM/android_device_samsung_sm7225-common.git
+    - git clone https://github.com/physwizz/a145p-T.git
   clang:
     - git clone --depth=1 https://gitlab.com/Jprimero15/lolz_clang.git -b main
   config:
-    - make O=out ARCH=arm64 vendor/a42xq_eur_open_defconfig
+    - make O=out ARCH=arm64 configs/a145m_defconfig
   build:
     - ARCH=arm64 CROSS_COMPILE="${PWD}/clang/bin/aarch64-linux-gnu-" CROSS_COMPILE_COMPAT="${PWD}/clang/bin/arm-linux-gnueabi" CROSS_COMPILE_ARM32="${PWD}/clang/bin/arm-linux-gnueabi-" CLANG_TRIPLE=aarch64-linux-gnu- make -j$(nproc --all) LLVM=1 LLVM_IAS=1 LD=ld.lld AR=llvm-ar NM=llvm-nm AS=llvm-as OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump STRIP=llvm-strip O=out
   target:
