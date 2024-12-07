@@ -16,7 +16,7 @@ LineageOS-20:
 
 Zenitsu:
   kernel:
-    - git clone https://github.com/Killerpac/android_kernel_realme_mt6785
+    - git clone https://github.com/physwizz/a145p-T.git
   clang:
     - git clone --depth=1 https://gitlab.com/Jprimero15/lolz_clang.git -b main
   config:
